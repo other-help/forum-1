@@ -37,17 +37,17 @@ return array(
      *    ]
      */
     'menu' => [
-        '用户与权限' => [
+        'Users' => [
             'users',
             'roles',
             'permissions',
         ],
-        '内容管理' => [
+        'Contenu' => [
             'categories',
             'topics',
             'replies',
         ],
-        '站点管理' => [
+        'Admin' => [
             'settings.site',
             'links',
         ],
