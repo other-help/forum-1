@@ -3,7 +3,7 @@
 
 Clone repo
 
-	git clone https://github.com/other-help/forum-2.git
+	git clone https://github.com/other-help/forum-1.git
 Installer les dependances de composer
 
 	composer install
