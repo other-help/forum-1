@@ -3,8 +3,8 @@
 use App\Models\Link;
 
 return [
-    'title'   => '资源推荐',
-    'single'  => '资源推荐',
+    'title'   => 'Recommandation de ressources',
+    'single'  => 'Recommandation de ressources',
 
     'model'   => Link::class,
 
@@ -20,32 +20,32 @@ return [
             'title' => 'ID',
         ],
         'title' => [
-            'title'    => '名称',
+            'title'    => 'Nom',
             'sortable' => false,
         ],
         'link' => [
-            'title'    => '链接',
+            'title'    => 'lien',
             'sortable' => false,
         ],
         'operation' => [
-            'title'  => '管理',
+            'title'  => 'Operation',
             'sortable' => false,
         ],
     ],
     'edit_fields' => [
         'title' => [
-            'title'    => '名称',
+            'title'    => 'Nom',
         ],
         'link' => [
-            'title'    => '链接',
+            'title'    => 'Lien',
         ],
     ],
     'filters' => [
         'id' => [
-            'title' => '标签 ID',
+            'title' => 'ID',
         ],
         'title' => [
-            'title' => '名称',
+            'title' => 'Nom',
         ],
     ],
 ];

@@ -3,8 +3,8 @@
 use Spatie\Permission\Models\Permission;
 
 return [
-    'title'   => '权限',
-    'single'  => '权限',
+    'title'   => 'Autorisation',
+    'single'  => 'Autorisation',
     'model'   => Permission::class,
 
     'permission' => function () {
@@ -36,31 +36,31 @@ return [
             'title' => 'ID',
         ],
         'name' => [
-            'title'    => '标示',
+            'title'    => 'marque',
         ],
         'operation' => [
-            'title'    => '管理',
+            'title'    => 'operation',
             'sortable' => false,
         ],
     ],
 
     'edit_fields' => [
         'name' => [
-            'title' => '标示（请慎重修改）',
+            'title' => 'Marque (veuillez modifier soigneusement)',
 
             // 表单条目标题旁的『提示信息』
-            'hint' => '修改权限标识会影响代码的调用，请不要轻易更改。'
+            'hint' => "La modification de l'id d'autorisation affectera l'appel du code, merci de ne pas le modifier à la légère。"
         ],
         'roles' => [
             'type' => 'relationship',
-            'title' => '角色',
+            'title' => 'Rôle',
             'name_field' => 'name',
         ],
     ],
 
     'filters' => [
         'name' => [
-            'title' => '标示',
+            'title' => 'marque',
         ],
     ],
 ];

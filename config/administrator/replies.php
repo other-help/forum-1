@@ -3,8 +3,8 @@
 use App\Models\Reply;
 
 return [
-    'title'   => '回复',
-    'single'  => '回复',
+    'title'   => 'réponse',
+    'single'  => 'réponse',
     'model'   => Reply::class,
 
     'columns' => [
@@ -13,14 +13,14 @@ return [
             'title' => 'ID',
         ],
         'content' => [
-            'title'    => '内容',
+            'title'    => 'contenu',
             'sortable' => false,
             'output'   => function ($value, $model) {
                 return '<div style="max-width:220px">' . $value . '</div>';
             },
         ],
         'user' => [
-            'title'    => '作者',
+            'title'    => 'auteur',
             'sortable' => false,
             'output'   => function ($value, $model) {
                 $avatar = $model->user->avatar;
@@ -29,20 +29,20 @@ return [
             },
         ],
         'topic' => [
-            'title'    => '话题',
+            'title'    => 'sujet',
             'sortable' => false,
             'output'   => function ($value, $model) {
                 return '<div style="max-width:260px">' . model_admin_link($model->topic->title, $model->topic) . '</div>';
             },
         ],
         'operation' => [
-            'title'  => '管理',
+            'title'  => 'operation',
             'sortable' => false,
         ],
     ],
     'edit_fields' => [
         'user' => [
-            'title'              => '用户',
+            'title'              => 'Utilisateur',
             'type'               => 'relationship',
             'name_field'         => 'name',
             'autocomplete'       => true,
@@ -50,7 +50,7 @@ return [
             'options_sort_field' => 'id',
         ],
         'topic' => [
-            'title'              => '话题',
+            'title'              => 'sujet',
             'type'               => 'relationship',
             'name_field'         => 'title',
             'autocomplete'       => true,
@@ -58,13 +58,13 @@ return [
             'options_sort_field' => 'id',
         ],
         'content' => [
-            'title'    => '回复内容',
+            'title'    => 'Contenu de la réponse',
             'type'     => 'textarea',
         ],
     ],
     'filters' => [
         'user' => [
-            'title'              => '用户',
+            'title'              => 'Utilisateur',
             'type'               => 'relationship',
             'name_field'         => 'name',
             'autocomplete'       => true,
@@ -72,7 +72,7 @@ return [
             'options_sort_field' => 'id',
         ],
         'topic' => [
-            'title'              => '话题',
+            'title'              => 'Sujet',
             'type'               => 'relationship',
             'name_field'         => 'title',
             'autocomplete'       => true,
@@ -80,13 +80,13 @@ return [
             'options_sort_field' => 'id',
         ],
         'content' => [
-            'title'    => '回复内容',
+            'title'    => 'Contenu de la réponse',
         ],
     ],
     'rules'   => [
         'content' => 'required'
     ],
     'messages' => [
-        'content.required' => '请填写回复内容',
+        'content.required' => 'Veuillez remplir le contenu de la réponse',
     ],
 ];

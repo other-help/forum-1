@@ -3,8 +3,8 @@
 use App\Models\Category;
 
 return [
-    'title'   => 'Classification',
-    'single'  => 'Classification',
+    'title'   => 'Categorie',
+    'single'  => 'Categorie',
     'model'   => Category::class,
 
     // 对 CRUD 动作的单独权限控制，其他动作不指定默认为通过
@@ -44,7 +44,7 @@ return [
     ],
     'filters' => [
         'id' => [
-            'title' => '分类 ID',
+            'title' => ' catégorie id',
         ],
         'name' => [
             'title' => 'Nom',

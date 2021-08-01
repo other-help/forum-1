@@ -7,7 +7,8 @@ Clone repo
 Installer les dependances de composer
 
 	composer install
-	
+ou
+    composer install --ignore-platform-reqs
 copie .env.example dans .env et configure les identifiants de ta base de donnée
 
 application key

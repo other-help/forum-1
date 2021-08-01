@@ -35,12 +35,12 @@
         <ul class="nav nav-tabs">
           <li class="nav-item">
             <a class="nav-link bg-transparent {{ active_class(if_query('tab', null)) }}" href="{{ route('users.show', $user->id) }}">
-              Le sujet de Ta
+              Sujets
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link bg-transparent {{ active_class(if_query('tab', 'replies')) }}" href="{{ route('users.show', [$user->id, 'tab' => 'replies']) }}">
-  La réponse de Ta
+  Reponses
             </a>
           </li>
         </ul>
